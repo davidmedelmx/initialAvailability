@@ -1,9 +1,7 @@
-
-List<DtAvailabilityStruct> initialAvailability() {
+List<DtAvailabilityStruct>? initialAvailability() {
   /// MODIFY CODE ONLY BELOW THIS LINE
 
-  // Generate 7 random array for each only day of the week
- final List<AvailabilityStruct> availability = [];
+  final List<DtAvailabilityStruct> availability = [];
 
   final daysOfWeek = [
     'Monday',
@@ -16,7 +14,7 @@ List<DtAvailabilityStruct> initialAvailability() {
   ];
 
   for (final day in daysOfWeek) {
-    availability.add(AvailabilityStruct(dayofWeek: day));
+    availability.add(DtAvailabilityStruct(dayofWeek: day));
   }
   return availability;
 
